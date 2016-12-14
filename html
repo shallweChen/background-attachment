@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+    <title>滚动切换背景</title>
+    <meta charset="utf-8">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .activebg{
+            position: relative;
+            width: 100%;
+            /*height: 600px;*/
+            height: 1080px;
+            background: #fff;
+            background-attachment: fixed;
+            background-position: center 0;
+            background-repeat: no-repeat;
+        }
+        .fisrtbg {
+            background-image: url('fisrtbg.jpg');
+        }
+
+        .secondbg {
+            background-image: url('avd.jpg');
+        }
+
+        .thirdbg {
+            background-image: url('blog.jpg');
+        }
+        .LOL{
+            text-align: center;
+            background: #e4393c;
+            line-height: 250px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="LOL">
+        <h1>头部</h1>
+    </div>
+
+    <!-- 背景一 -->
+    <div class="activebg fisrtbg" data-stellar-background-ratio="0.03"></div>
+
+    <div class="LOL">
+        <h1>内容一</h1>
+    </div>
+
+    <!-- 背景二 -->
+    <div class="activebg secondbg" data-stellar-background-ratio="0.05"></div>
+
+    <div class="LOL">
+        <h1>内容二</h1>
+    </div>
+
+    <!-- 背景三 -->
+    <div class="activebg thirdbg" data-stellar-background-ratio="0.05"></div>
+
+    <div class="LOL">
+        <h1>底部</h1>
+    </div>
+
+</body>
+</html>
